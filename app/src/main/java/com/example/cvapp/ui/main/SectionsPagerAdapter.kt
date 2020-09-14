@@ -19,6 +19,9 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager)
         // Return a PlaceholderFragment (defined as a static inner class below).
         return when(position) {
             0 -> HomeFragment.newInstance("Home", "param2")
+            1 -> HomeFragment.newInstance("About", "param2")
+            2 -> HomeFragment.newInstance("Work", "param2")
+            3 -> HomeFragment.newInstance("Contact", "param2")
             else -> HomeFragment.newInstance("Home", "param2")
         }
     }
@@ -26,12 +29,15 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager)
     override fun getPageTitle(position: Int): CharSequence? {
         return when(position) {
             0 -> "Home"
+            1 -> "About"
+            2 -> "Work"
+            3 -> "Contact"
             else -> "Home"
         }
     }
 
     override fun getCount(): Int {
         // Show 2 total pages.
-        return 2
+        return 4
     }
 }
