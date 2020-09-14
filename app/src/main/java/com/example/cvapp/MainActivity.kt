@@ -8,13 +8,13 @@ import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.example.cvapp.repository.ListDatasource
-import com.example.cvapp.repository.ListDatasource.editBio
 import com.example.cvapp.ui.main.SectionsPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.fragment_home.*
 
 
 class MainActivity : AppCompatActivity() {
+
 
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,11 +29,12 @@ class MainActivity : AppCompatActivity() {
 
     fun click(view: View) {
         var builder = AlertDialog.Builder(view.context)
-        when(view.id) {
+        when (view.id) {
             R.id.editBio -> editText(builder, view)
             R.id.achieve -> addAchievement(builder, view)
         }
-        builder.create().show()
+        var dialog = builder.create()
+        dialog.show()
     }
 
 
@@ -60,13 +61,14 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun addAchievement(builder : AlertDialog.Builder, view : View) {
+    private fun addAchievement(builder: AlertDialog.Builder, view: View) {
         builder.setTitle("Add Achievement")
         val editText = EditText(view.context)
         builder.setView(editText)
         builder.setPositiveButton("Add") { dialogInterface, which ->
             run {
                 ListDatasource.addAchievement("1", editText.text.toString())
+                reload()
                 dialogInterface.dismiss()
             }
         }
@@ -78,5 +80,7 @@ class MainActivity : AppCompatActivity() {
         val tabLayout = findViewById<View>(R.id.tabs) as TabLayout
         val tab = tabLayout.getTabAt(1)
         tab!!.select()
+        val tab1 = tabLayout.getTabAt(0)
+        tab1!!.select()
     }
 }

@@ -4,8 +4,8 @@ import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.example.cvapp.HomeFragment
-import com.example.cvapp.R
+import com.example.cvapp.ui.main.home.HomeFragment
+import com.example.cvapp.ui.main.work.WorkFragment
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -20,7 +20,7 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager)
         return when(position) {
             0 -> HomeFragment.newInstance("Home", "param2")
             1 -> HomeFragment.newInstance("About", "param2")
-            2 -> HomeFragment.newInstance("Work", "param2")
+            2 -> WorkFragment.newInstance("Work", "param2")
             3 -> HomeFragment.newInstance("Contact", "param2")
             else -> HomeFragment.newInstance("Home", "param2")
         }
