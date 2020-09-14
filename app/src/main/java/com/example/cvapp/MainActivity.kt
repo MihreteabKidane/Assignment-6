@@ -33,8 +33,7 @@ class MainActivity : AppCompatActivity() {
             R.id.editBio -> editText(builder, view)
             R.id.achieve -> addAchievement(builder, view)
         }
-        var dialog = builder.create()
-        dialog.show()
+        builder.create().show()
     }
 
     fun editText(builder: AlertDialog.Builder, view : View) {
@@ -61,7 +60,6 @@ class MainActivity : AppCompatActivity() {
         builder.setPositiveButton("Add") { dialogInterface, which ->
             run {
                 ListDatasource.addAchievement("1", editText.text.toString())
-                reload()
                 dialogInterface.dismiss()
             }
         }
@@ -73,7 +71,5 @@ class MainActivity : AppCompatActivity() {
         val tabLayout = findViewById<View>(R.id.tabs) as TabLayout
         val tab = tabLayout.getTabAt(1)
         tab!!.select()
-        val tab1 = tabLayout.getTabAt(0)
-        tab1!!.select()
     }
 }
