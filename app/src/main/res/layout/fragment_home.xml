@@ -29,6 +29,11 @@
                 app:cardCornerRadius="85dp"
                 app:cardElevation="10dp">
 
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/profile_image"
                     android:layout_width="150dp"
@@ -78,12 +83,13 @@
                     style="@style/TextStyle"/>
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/edit"
+                    android:id="@+id/editBio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|end"
                     android:layout_margin="@dimen/fab_margin"
                     app:srcCompat="@drawable/edit"
+                    android:onClick="click"
                     tools:ignore="VectorDrawableCompat" />
 
             </androidx.cardview.widget.CardView>
@@ -117,13 +123,14 @@
                     android:layout_margin="30dp"/>
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/fab"
+                    android:id="@+id/achieve"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|end"
-
                     android:layout_margin="@dimen/fab_margin"
-                    app:srcCompat="@drawable/plus" />
+                    app:srcCompat="@drawable/plus"
+                    android:onClick="click"
+                    tools:ignore="VectorDrawableCompat" />
 
 
             </androidx.cardview.widget.CardView>
@@ -139,8 +146,9 @@
                     android:id="@+id/facebook"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
                     android:src="@drawable/facebook" />
 
                 <ImageButton
@@ -148,6 +156,7 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
+                    android:background="@android:color/transparent"
                     android:layout_marginRight="10dp"
                     android:src="@drawable/twitter" />
 
@@ -156,6 +165,7 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
+                    android:background="@android:color/transparent"
                     android:layout_marginRight="10dp"
                     android:src="@drawable/linkedin" />
 
@@ -164,6 +174,7 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
+                    android:background="@android:color/transparent"
                     android:src="@drawable/personal" />
 
             </LinearLayout>

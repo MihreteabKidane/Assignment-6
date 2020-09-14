@@ -23,7 +23,25 @@ object ListDatasource : UserDatasource {
     }
 
     override fun edit(user: User): String {
-        TODO("Not yet implemented")
+        for ((index, aUser) in storage.withIndex()) {
+            when (aUser.userId) {
+                user.userId -> {
+                    storage[index] = user
+                    return user.userId.toString()
+                }
+            }
+        }
+        return "Couldn't Edit Device"
+    }
+
+    override fun editBio(userId: String, text : String){
+        for ((index, aUser) in storage.withIndex()) {
+            when (aUser.userId.toString()) {
+                userId -> {
+                    storage[index].bio = text
+                }
+            }
+        }
     }
 
     override fun delete(user: User): String {
@@ -32,5 +50,13 @@ object ListDatasource : UserDatasource {
 
     override fun findAll(): List<User> {
         return this.storage
+    }
+
+    override fun addAchievement(s: String, achievement: String) {
+        for ((index, aUser) in storage.withIndex()) {
+            when (aUser.userId.toString()) {
+                s -> storage[index].achievements.add(achievement)
+            }
+        }
     }
 }

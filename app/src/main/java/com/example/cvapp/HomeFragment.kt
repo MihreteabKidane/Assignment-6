@@ -2,7 +2,6 @@ package com.example.cvapp
 
 import android.os.Build
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,9 +9,9 @@ import android.widget.TableLayout
 import android.widget.TableRow
 import android.widget.TextView
 import androidx.annotation.RequiresApi
+import androidx.fragment.app.Fragment
 import com.example.cvapp.domains.User
 import com.example.cvapp.repository.ListDatasource
-import kotlinx.android.synthetic.main.fragment_home.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -45,14 +44,21 @@ class HomeFragment : Fragment() {
 
 
         ListDatasource.save(
-            User(1,
-            "Brook",
-            "Yemerou",
-            "A passionate Java Developer playing a key role at all phases of the software development lifecycle. Hands-on expertise spanning Java, Spring, NodeJS, Express, jQuery, Angular, MySQL, MongoDB, and Python accompanied by machine learning and neural networks research. ",
-            arrayListOf("Created Restful webservices", "Designing mobile app UIs"),"", "", "https://www.linkedin.com/in/brookyemerou/", "")
+            User(
+                1,
+                "Brook",
+                "Yemerou",
+                "A passionate Java Developer playing a key role at all phases of the software development lifecycle. Hands-on expertise spanning Java, Spring, NodeJS, Express, jQuery, Angular, MySQL, MongoDB, and Python accompanied by machine learning and neural networks research. ",
+                arrayListOf("Created Restful webservices", "Designing mobile app UIs"),
+                "",
+                "",
+                "https://www.linkedin.com/in/brookyemerou/",
+                ""
+            )
         )
 
         var user : User? = ListDatasource.find("1")
+        view.findViewById<TextView>(R.id.id).text = user!!.userId.toString()
         view.findViewById<TextView>(R.id.username).text = "${user?.firstname} ${user?.lastname}"
         view.findViewById<TextView>(R.id.bio).text = user?.bio
         for(i in user!!.achievements) {
@@ -65,6 +71,13 @@ class HomeFragment : Fragment() {
         }
 
         return view
+    }
+
+    override fun setUserVisibleHint(isVisibleToUser: Boolean) {
+        super.setUserVisibleHint(isVisibleToUser)
+        if (isVisibleToUser) {
+            fragmentManager!!.beginTransaction().detach(this).attach(this).commit()
+        }
     }
 
     companion object {
