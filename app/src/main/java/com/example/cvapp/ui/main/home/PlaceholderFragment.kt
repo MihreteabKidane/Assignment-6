@@ -1,4 +1,4 @@
-package com.example.cvapp.ui.main
+package com.example.cvapp.ui.main.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
