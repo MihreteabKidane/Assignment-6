@@ -1,4 +1,4 @@
-package com.example.cvapp.ui.main
+package com.example.cvapp.ui.main.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
