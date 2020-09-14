@@ -36,6 +36,13 @@ class MainActivity : AppCompatActivity() {
         builder.create().show()
     }
 
+
+    fun profileClick(view : View) {
+        repeat(10) {
+//            println("Heyyyyyy!!!!")
+        }
+    }
+
     fun editText(builder: AlertDialog.Builder, view : View) {
         builder.setTitle("Edit")
         val editText = EditText(view.context)
