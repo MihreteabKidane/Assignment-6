@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MIU CV Builder</string>
+    <string name="tab_text_1">Home</string>
+    <string name="tab_text_2">Tab 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //About Me
+    <string name="about_me_personalInfo">Highly motivated and technically skilled Java developer with 3 years of hands on experience solving complex software
+problems built to specification using best practices. An additional 4 years of civil engineering experience. Excellent skills in
+implementing modern technologies such as Java, Spring, Spring boot, Hibernate, JPA, JavaScript, jQuery, RESTFUL API,
+MySQL and MongoDB ensuring use of industry best standards. Knowledgeable in Agile/Scrum based SDLC methodologies.
+Expert team player focused on maximizing production in minimum time and minimum cost.</string>
+    <string name="weakness">I can be too critical of myself. A pattern I’ve noticed throughout my career is that I often feel I could have done more, even if objectively,
+        I’ve done well. Earlier in my career, this led to burnout and negative self-talk. One solution I’ve implemented over the last three years is to actively pause and celebrate my achievements.
+        Not only has this helped my own self-esteem, but it has also helped me genuinely appreciate and recognize my team and other support systems.</string>
+    <string name="strength">I’m thorough and tenacious. When I’m on a project, I keep track of the details. Because I have a comprehensive understanding of the components,
+        I can spot the essentials and rigorously advocate for them to meet deadlines. I regularly see this reflected in my peer and management feedback.</string>
+    <string name="education">Master of Science in Computer Science \n\n
+(Completed Course Studies, Graduating Dec 2020) \n\n
+Maharishi International University – Fairfield, Iowa\n\n
+Key Courses: Fundamental Programming Practices, Modern Programming Practices, Web Application Programming,
+Web Application Architecture, Modern Web Application, Advanced Software development, Software Engineering,
+Algorithm, Enterprise Architecture, Database Management System, Machine learning. \n\n
+Bachelor of Science in Engineering\n\n
+University Of Asmara, Eritrea.</string>
+
+    <string name="hobbies">
+        soccer\nn
+        volleyBall\nn
+
+    </string>
+
+
+</resources>
