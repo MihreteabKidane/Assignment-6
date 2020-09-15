@@ -75,12 +75,13 @@
                     android:textColor="#000000"
                     android:textSize="24sp"
                     android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/bio"
+                    style="@style/TextStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Bio"
-                    style="@style/TextStyle"/>
+                    android:text="Bio" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/editBio"
