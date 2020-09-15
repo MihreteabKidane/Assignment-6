@@ -75,7 +75,6 @@ class MainActivity : AppCompatActivity() {
         builder.setNegativeButton("Cancel") { dialog, which -> dialog.dismiss() }
     }
 
-
     fun reload() {
         val tabLayout = findViewById<View>(R.id.tabs) as TabLayout
         val tab = tabLayout.getTabAt(1)
