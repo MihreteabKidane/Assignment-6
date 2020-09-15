@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.example.cvapp.ui.main.about.AboutMeFragment
 import com.example.cvapp.ui.main.home.HomeFragment
 import com.example.cvapp.ui.main.work.WorkFragment
 import com.example.cvapp.ui.main.contact.ContactFragment
@@ -19,7 +20,7 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager)
         // Return a PlaceholderFragment (defined as a static inner class below).
         return when(position) {
             0 -> HomeFragment.newInstance("Home", "param2")
-            1 -> HomeFragment.newInstance("About", "param2")
+            1 -> AboutMeFragment.newInstance("About", "param2")
             2 -> WorkFragment.newInstance("Work", "param2")
             3 -> ContactFragment.newInstance("Contact", "param2")
             else -> HomeFragment.newInstance("Home", "param2")

@@ -39,9 +39,7 @@ class MainActivity : AppCompatActivity() {
 
 
     fun profileClick(view : View) {
-        repeat(10) {
-//            println("Heyyyyyy!!!!")
-        }
+        
     }
 
     fun editText(builder: AlertDialog.Builder, view : View) {
@@ -74,7 +72,6 @@ class MainActivity : AppCompatActivity() {
         }
         builder.setNegativeButton("Cancel") { dialog, which -> dialog.dismiss() }
     }
-
 
     fun reload() {
         val tabLayout = findViewById<View>(R.id.tabs) as TabLayout
