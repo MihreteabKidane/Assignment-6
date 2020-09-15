@@ -7,10 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f93da2a-180a-4337-938e-dd918ca780da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,18 +130,32 @@
       <option name="presentableId" value="Default" />
       <updated>1600117683609</updated>
     </task>
+    <task id="LOCAL-00001" summary="New README file.">
+      <created>1600144560919</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600144560919</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
+    <MESSAGE value="New README file." />
+    <option name="LAST_COMMIT_MESSAGE" value="New README file." />
   </component>
   <component name="WindowStateProjectService">
     <state x="263" y="119" key="AndroidCreateResourceFileDialog" timestamp="1600117836876">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="119" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1600117836876" />
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1600144559563">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1600144559563" />
     <state width="1323" height="328" key="GridCell.Tab.0.bottom" timestamp="1600138734662">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -166,6 +176,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600143898666" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1600144579154">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600144579154" />
     <state x="380" y="0" width="606" height="728" key="find.popup" timestamp="1600125427047">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
