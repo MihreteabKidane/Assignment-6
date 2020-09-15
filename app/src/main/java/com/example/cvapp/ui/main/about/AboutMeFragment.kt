@@ -13,7 +13,6 @@ import androidx.annotation.RequiresApi
 import com.example.cvapp.R
 import com.example.cvapp.domains.User
 import com.example.cvapp.repository.ListDatasource
-import com.example.cvapp.ui.main.home.ARG_PARAM1
 
 const val ARG_PARAM1 = "param1"
 class AboutMeFragment : Fragment() {
@@ -38,34 +37,15 @@ class AboutMeFragment : Fragment() {
                         "Express, jQuery, Angular, MySQL, MongoDB, and Python accompanied by machine " +
                         "learning and neural networks research. ",
                 arrayListOf("Created Restful webservices", "Designing mobile app UIs"),
-                arrayListOf(""),"",
                 "",
                 "https://www.linkedin.com/in/brookyemerou/",
+                "",
                 ""
             )
         )
-
-        var user : User? = ListDatasource.find("1")
-      //  view.findViewById<TextView>(R.id.id)!!.text = user!!.userId.toString()
-      //  view.findViewById<TextView>(R.id.username).text = "${user?.firstname} ${user?.lastname}"
-      //  view.findViewById<TextView>(R.id.Hobbies)!!.text = user?.moreHobbies.toString()
-        if (user != null) {
-            inflateTable(user, view)
-        }
         return view
     }
 
-    @RequiresApi(Build.VERSION_CODES.M)
-    fun inflateTable(user : User, view : View) {
-        for(i in user!!.moreHobbies) {
-            val textView = TextView(requireContext())
-            textView.text = "• $i"
-            textView.setTextAppearance(R.style.TextStyle)
-            val tableRow = TableRow(requireContext())
-            tableRow.addView(textView, TableRow.LayoutParams.FILL_PARENT)
-          //  view!!.findViewById<TableLayout>(R.id.table).addView(tableRow)
-        }
-    }
 
     override fun setUserVisibleHint(isVisibleToUser: Boolean) {
         super.setUserVisibleHint(isVisibleToUser)
@@ -98,6 +78,5 @@ class AboutMeFragment : Fragment() {
 
 
     }
-
 
 

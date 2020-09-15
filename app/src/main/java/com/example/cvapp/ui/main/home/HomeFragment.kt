@@ -16,7 +16,7 @@ import com.example.cvapp.repository.ListDatasource
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-const val ARG_PARAM1 = "param1"
+private const val ARG_PARAM1 = "param1"
 
 /**
  * A simple [Fragment] subclass.
@@ -51,7 +51,7 @@ class HomeFragment : Fragment() {
                 "Yemerou",
                 "A passionate Java Developer playing a key role at all phases of the software development lifecycle. Hands-on expertise spanning Java, Spring, NodeJS, Express, jQuery, Angular, MySQL, MongoDB, and Python accompanied by machine learning and neural networks research. ",
                 arrayListOf("Created Restful webservices", "Designing mobile app UIs"),
-                arrayListOf(""),"",
+                "",
                 "",
                 "https://www.linkedin.com/in/brookyemerou/",
                 ""

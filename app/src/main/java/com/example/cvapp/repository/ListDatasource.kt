@@ -60,12 +60,5 @@ object ListDatasource : UserDatasource {
         }
     }
 
-    fun addMoreHobbies(s: String, moreHobies: String) {
-        for ((index, aUser) in storage.withIndex()) {
-            when (aUser.userId.toString()) {
-                s -> storage[index].moreHobbies.add(moreHobies)
-            }
-        }
-    }
 
 }

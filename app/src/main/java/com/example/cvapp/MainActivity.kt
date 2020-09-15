@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         builder.setView(editText)
         builder.setPositiveButton("Save") { dialogInterface, which ->
             run {
-                ListDatasource.addMoreHobbies("1", editText.text.toString())
+                ListDatasource.editBio("1", editText.text.toString())
                 bio.text = ListDatasource.find("1")!!.bio
                 reload()
                 dialogInterface.dismiss()
@@ -74,20 +74,6 @@ class MainActivity : AppCompatActivity() {
         }
         builder.setNegativeButton("Cancel") { dialog, which -> dialog.dismiss() }
     }
-
-    private fun addMoreHobbies(builder : AlertDialog.Builder, view : View) {
-        builder.setTitle("Add More Hobbies")
-        val editTextHobby = EditText(view.context)
-        builder.setView(editTextHobby)
-        builder.setPositiveButton("Add") { dialogInterface, which ->
-            run {
-                ListDatasource.addMoreHobbies("1", editTextHobby.text.toString())
-                dialogInterface.dismiss()
-            }
-        }
-        builder.setNegativeButton("Cancel") { dialog, which -> dialog.dismiss() }
-    }
-
 
     fun reload() {
         val tabLayout = findViewById<View>(R.id.tabs) as TabLayout
