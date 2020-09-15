@@ -64,8 +64,8 @@ class HomeFragment : Fragment() {
         view.findViewById<TextView>(R.id.bio).text = user?.bio
         for(i in user!!.achievements) {
             val textView = TextView(requireContext())
-            textView.text = "• $i"
             textView.setTextAppearance(R.style.TextStyle)
+            textView.text = "• $i"
             val tableRow = TableRow(requireContext())
             tableRow.addView(textView, TableRow.LayoutParams.FILL_PARENT)
             view.findViewById<TableLayout>(R.id.table).addView(tableRow)

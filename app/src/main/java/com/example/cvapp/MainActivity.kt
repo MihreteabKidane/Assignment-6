@@ -39,9 +39,7 @@ class MainActivity : AppCompatActivity() {
 
 
     fun profileClick(view : View) {
-        repeat(10) {
-//            println("Heyyyyyy!!!!")
-        }
+        
     }
 
     fun editText(builder: AlertDialog.Builder, view : View) {
